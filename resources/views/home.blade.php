@@ -372,7 +372,7 @@
                         <div class="card w-100">
                             <div class="row">
                                 <div class="col-lg-4" style="height: 230px;">
-                                    <img src="{{ Storage::url($ilan->resim1) }}" alt="Henüz Eklenmemiş" class="img-fluid rounded-start w-100" style="height: 235px;">
+                                    <img src="{{ $ilan->resim1 }}" alt="Henüz Eklenmemiş" class="img-fluid rounded-start w-100" style="height: 235px;">
                                 </div>
                                 <div class="col-lg-8">
                                     <div class="card-body ps-2">
@@ -434,13 +434,13 @@
                                                 <div id="carouselExample{{ $ilan->ilan_id }}" class="carousel slide">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{  Storage::url($ilan->resim1) }}" alt="Henüz Eklenmemiş" class="img-fluid rounded w-100" style="height: 350px;">
+                                                            <img src="{{ $ilan->resim1 }}" alt="Henüz Eklenmemiş" class="img-fluid rounded w-100" style="height: 350px;">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{  Storage::url($ilan->resim2) }}" alt="Henüz Eklenmemiş" class="img-fluid rounded w-100" style="height: 350px;">
+                                                            <img src="{{  $ilan->resim2 }}" alt="Henüz Eklenmemiş" class="img-fluid rounded w-100" style="height: 350px;">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{  Storage::url($ilan->resim3) }}" alt="Henüz Eklenmemiş" class="img-fluid rounded w-100" style="height: 350px;">
+                                                            <img src="{{  $ilan->resim3 }}" alt="Henüz Eklenmemiş" class="img-fluid rounded w-100" style="height: 350px;">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample{{ $ilan->ilan_id }}" data-bs-slide="prev">

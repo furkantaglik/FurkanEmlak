@@ -40,7 +40,7 @@
                     <tr>
                         <th scope="row">{{$ilan->ilan_id}} </th>
                         <input type="hidden" class="form-control" name="ilan_id"  value="{{$ilan->ilan_id}}"> 
-                        <td class="w-25"> <img src="{{ Storage::url($ilan->resim1) }}" alt="Henüz Eklenmemiş" class="img-fluid rounded-start w-100"> </td>
+                        <td class="w-25"> <img src="{{ $ilan->resim1}}" alt="Henüz Eklenmemiş" class="img-fluid rounded-start w-100"> </td>
                         <td>{{$ilan->baslik}}</td>
                         <td>{{$ilan->tipi}}</td>
                         <td>{{$ilan->il}}</td>

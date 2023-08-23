@@ -69,19 +69,12 @@ class AdminController extends Controller
         $ilanlar->ilce = $request->filled('ilce') ? $request->input('ilce') : $ilanlar->ilce;
         $ilanlar->mahalle = $request->filled('mahalle') ? $request->input('mahalle') : $ilanlar->mahalle;
 
-        // Klasöre kaydet
+        // Resimler
 
-        if ($request->hasFile("resim1")) {
-            $ilanlar->resim1 = $request->file("resim1")->store('public/ilanfotoraf/');
-        }
+        $ilanlar->resim1= $request->filled('resim1') ? $request->input('resim1') : $ilanlar->resim1;
+        $ilanlar->resim2 = $request->filled('resim2') ? $request->input('resim2') : $ilanlar->resim2;
+        $ilanlar->resim3 = $request->filled('resim3') ? $request->input('resim3') : $ilanlar->resim3;
 
-        if ($request->hasFile("resim2")) {
-            $ilanlar->resim2 = $request->file("resim2")->store('public/ilanfotoraf/');
-        }
-
-        if ($request->hasFile("resim3")) {
-            $ilanlar->resim3 = $request->file("resim3")->store('public/ilanfotoraf/');
-        }
 
         if ($ilanlar->save()) {
             return redirect()->route("admin")->with(["mesaj" => "İlan Güncellendi"]);
@@ -122,19 +115,9 @@ class AdminController extends Controller
         $ilanlar->ilce = $request->input('ilce');
         $ilanlar->mahalle = $request->input('mahalle');
 
-        //klasöre kaydet
-
-        if ($request->hasFile("resim1")) {
-            $ilanlar->resim1 = $request->file("resim1")->store('public/ilanfotoraf/');
-        }
-
-        if ($request->hasFile("resim2")) {
-            $ilanlar->resim2 = $request->file("resim2")->store('public/ilanfotoraf/');
-        }
-
-        if ($request->hasFile("resim3")) {
-            $ilanlar->resim3 = $request->file("resim3")->store('public/ilanfotoraf/');
-        }
+        $ilanlar->resim1= $request->filled('resim1') ? $request->input('resim1') : $ilanlar->resim1;
+        $ilanlar->resim2 = $request->filled('resim2') ? $request->input('resim2') : $ilanlar->resim2;
+        $ilanlar->resim3 = $request->filled('resim3') ? $request->input('resim3') : $ilanlar->resim3;
 
         if ($ilanlar->save()) {
             return redirect()->route("admin")->with(["mesaj" => "İlan Eklendi"]);

@@ -108,14 +108,14 @@
         <div class="col-lg-4 border border-dark p-3 text-center mx-auto">
             <div class="gorselalani">
                 <h5 class="text-info">Görseller</h5>
-                <label for="formFile1" class="form-label">resim 1</label>
-                <input type="file" class="form-control border border-dark text-center" name="resim1" id="formFile1">
+                <label for="formFile1" class="form-label"></label>
+                <input type="text" class="form-control border border-dark text-center" name="resim1" id="formFile1">
 
-                <label for="formFile2" class="form-label">resim 2</label>
-                <input type="file" class="form-control border border-dark text-center" name="resim2" id="formFile2">
+                <label for="formFile2" class="form-label"></label>
+                <input type="text" class="form-control border border-dark text-center" name="resim2" id="formFile2">
 
-                <label for="formFile3" class="form-label">resim 3</label>
-                <input type="file" class="form-control border border-dark text-center" name="resim3" id="formFile3">
+                <label for="formFile3" class="form-label"></label>
+                <input type="text" class="form-control border border-dark text-center" name="resim3" id="formFile3">
             </div>
             <hr>
             <div class="aciklamaalani">
