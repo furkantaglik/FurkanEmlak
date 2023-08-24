@@ -14,6 +14,7 @@ daha önce yaptığım emlak sitesi projesinin laravel ile yanilenmiş hali
 ## Çalıştırma
 
 1: ilk olarak dosyayıyı indirin ve zip'ten çıkartın
+#
 2: editörde açın ve composer install komutunu çalıştırın (composer yüklü olmalıdır) bu tüm bağımlılıkları yükleyecektir
 3: kök klasörde .env dosyası oluşturun içeriğini .env.example içerisinden kopyalabilirsiniz
 4: php artisan key:generate komutunu çalıştırın (hata alırsanız .env dosyasındaki App_key kısmının karşılığını silin tekrar deneyin) keyiniz buraya gelmelidir
