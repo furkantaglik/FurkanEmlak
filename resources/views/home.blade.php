@@ -457,8 +457,8 @@
                                             <div class="col-lg-6 mt-2 mt-lg-3">
                                                 <h3 class="card-title fw-bold">{{ $ilan->fiyat }} TL</h3>
                                                 <h4 class="card-text fw-bold mb-lg-3">{{ $ilan->baslik }}</h4>
-                                                <small class="bi bi-geo-alt text-muted fs-5 mt-5">{{ $ilan->il }} {{ $ilan->ilce }} {{ $ilan->mahalle }}</small><br>
-                                                <small class="bi bi-calendar2-minus text-muted fs-5 mt-3">{{ $ilan->tarih }}</small><br>
+                                                <small class="bi bi-geo-alt text-muted fs-5 mt-5"> {{ $ilan->il }} {{ $ilan->ilce }} {{ $ilan->mahalle }}</small><br>
+                                                <small class="bi bi-calendar2-minus text-muted fs-5 mt-3"> {{ $ilan->created_at }}</small><br>
 
                                                 <p class="mt-4"><b>Açıklama</b><br/>{{ $ilan->aciklama }}</p>
                                             </div>
