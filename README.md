@@ -6,6 +6,12 @@ Kullanıcıların siteye giriş yaparak ilanlar içerisinden filtreleme ve arama
 
 Php,Laravel,Sql,Boostrap
 
+# Görseller
+
+![Alt text](<public/images/readme/Ekran Görüntüsü (44).png>)
+
+![Alt text](<public/images/readme/Ekran Görüntüsü (45).png>)
+
 # Run
 
 1: ilk olarak dosyayıyı indirin ve zip'ten çıkartın
